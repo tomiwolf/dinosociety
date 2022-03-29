@@ -1,0 +1,108 @@
+.team {
+	padding-top: 150px;
+	padding-bottom: 150px;
+	background: url('../../assets/TeamBackground.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	h1 {
+		text-align: center;
+		text-transform: uppercase;
+		color: #ffffff;
+		font-weight: 900;
+		font-size: 50px;
+		line-height: 59px;
+	}
+
+	.team_row {
+		margin-top: 50px;
+
+		.team_card {
+			cursor: pointer;
+
+			transition: transform 0.2s;
+			&:hover {
+				transform: scale(1.05);
+			}
+
+			width: 100%;
+			background: rgba(255, 255, 255, 0.32);
+			border: 1px solid rgba(255, 255, 255, 0.61);
+			backdrop-filter: blur(137.8px);
+			padding: 20px;
+
+			.img_container {
+				width: 100%;
+				height: 100%;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+			.content {
+				margin-top: 10px;
+				color: #fff;
+				text-align: center;
+				text-transform: uppercase;
+
+				h2 {
+					font-weight: 900;
+					font-size: 24px;
+					line-height: 28px;
+				}
+
+				h3 {
+					font-weight: 900;
+					font-size: 14px;
+					line-height: 17px;
+				}
+
+				.icon_container {
+					.icon {
+						font-size: 25px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include tablet-screen {
+	.team {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		h1 {
+			font-weight: 800;
+			font-size: 40px;
+		}
+
+		.team_row {
+			margin-top: 40px;
+
+			.team_card {
+				.content {
+					margin-top: 10px;
+
+					h2 {
+						font-weight: 800;
+						font-size: 22px;
+					}
+
+					h3 {
+						font-weight: 800;
+						font-size: 14px;
+					}
+
+					.icon_container {
+						.icon {
+							font-size: 22px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

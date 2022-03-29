@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Rubik', sans-serif;
+}
+
+.container_padding_x {
+	padding: 0 70px;
+}
+
+@include tablet-screen {
+	.container_padding_x {
+		padding: 0 50px;
+	}
+}
+
+@include small-screen-phone {
+	.container_padding_x {
+		padding: 0 30px;
+	}
+}

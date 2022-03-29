@@ -1,0 +1,171 @@
+.join_community {
+	padding-top: 150px;
+	padding-bottom: 150px;
+
+	background: url('../../assets/JoinCommunityBackground.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	h1 {
+		text-align: center;
+		font-weight: 900;
+		font-size: 50px;
+		text-transform: uppercase;
+		color: #ffffff;
+	}
+
+	.community_row {
+		display: flex;
+		gap: 50px;
+		justify-content: center;
+		align-items: center;
+		padding: 50px 50px;
+
+		.content_section {
+			width: 60%;
+
+			p {
+				font-weight: 600;
+				font-size: 18px;
+				color: #ffffff;
+			}
+
+			.buttons_row {
+				margin-top: 50px;
+				display: flex;
+				gap: 30px;
+				width: 100%;
+				align-items: center;
+				justify-content: flex-start;
+
+				button {
+					width: 35%;
+					height: 50px;
+					background: #ffffff;
+					box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+					border-radius: 8px;
+					display: flex;
+					gap: 15px;
+					align-items: center;
+					justify-content: center;
+					outline: none;
+					border: 2px solid #ffffff;
+
+					span {
+						display: block;
+						text-transform: uppercase;
+						color: #028171;
+						font-weight: bold;
+						font-size: 16px;
+					}
+
+					.icon {
+						display: block;
+						font-size: 18px;
+						color: #028171;
+					}
+
+					&:hover {
+						background: #028171;
+
+						span {
+							color: #ffffff;
+						}
+
+						.icon {
+							color: #ffffff;
+						}
+					}
+
+					&:not(:first-child) {
+						background: transparent;
+
+						&:hover {
+							background: #fff;
+
+							span {
+								color: #028171;
+							}
+
+							.icon {
+								color: #028171;
+							}
+						}
+
+						span {
+							color: #ffffff;
+						}
+
+						.icon {
+							color: #ffffff;
+						}
+					}
+				}
+			}
+		}
+
+		.image_section {
+			width: 40%;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@include tablet-screen {
+	.join_community {
+		padding-top: 100px;
+		padding-bottom: 100px;
+
+		h1 {
+			font-weight: 800;
+			font-size: 40px;
+		}
+
+		.community_row {
+			display: flex;
+			flex-direction: column;
+			gap: 50px;
+			justify-content: center;
+			align-items: center;
+			padding: 50px 20px;
+
+			.content_section {
+				width: 100%;
+
+				p {
+					font-weight: 500;
+					font-size: 16px;
+				}
+
+				.buttons_row {
+					margin-top: 40px;
+					gap: 20px;
+					justify-content: flex-start;
+
+					button {
+						width: 50%;
+						height: 45px;
+						gap: 10px;
+
+						span {
+							font-size: 12px;
+						}
+
+						.icon {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+
+			.image_section {
+				width: 100%;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

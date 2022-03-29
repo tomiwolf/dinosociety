@@ -1,0 +1,114 @@
+.header {
+	width: 100%;
+	height: 100vh;
+	background: url('../../assets/HeaderBackground.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	.content {
+		margin-top: -100px;
+		text-align: center;
+
+		h1 {
+			color: #028171;
+			text-transform: uppercase;
+			font-weight: 900;
+			font-size: 97px;
+		}
+
+		p {
+			color: #000000;
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 20px;
+		}
+
+		span {
+			display: block;
+			color: #ffffff;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 16px;
+		}
+
+		button {
+			margin-top: 25px;
+			background: #ffffff;
+			box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+			border-radius: 8px;
+			border: none;
+			width: 225px;
+			height: 54px;
+			color: #028171;
+			font-weight: bold;
+			font-size: 24px;
+			text-transform: uppercase;
+			border: 1px solid #fff;
+
+			&:hover {
+				background: transparent;
+				color: #fff;
+			}
+		}
+	}
+
+	.dino_group_background {
+		position: absolute;
+		bottom: 0;
+		width: 80%;
+		height: 35%;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+}
+
+@include tablet-screen {
+	.header {
+		.content {
+			padding: 0 30px;
+			h1 {
+				font-weight: 900;
+				font-size: 50px;
+			}
+
+			p {
+				font-size: 16px;
+				line-height: 16px;
+			}
+
+			span {
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 16px;
+			}
+
+			button {
+				margin-top: 25px;
+				width: 200px;
+				height: 40px;
+				font-size: 18px;
+			}
+		}
+
+		.dino_group_background {
+			position: absolute;
+			bottom: 0;
+			width: 90%;
+			height: 20%;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: fill;
+			}
+		}
+	}
+}
