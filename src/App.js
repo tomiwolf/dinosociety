@@ -8,6 +8,7 @@ import Team from './components/Team'
 import FAQS from './components/FAQS'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
+import RoadMap from './components/RoadMap'
 import DinoGroupHeader from '../src/assets/DinoGroupHeader.png'
 
 //blockchain
